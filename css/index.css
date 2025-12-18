@@ -1,0 +1,136 @@
+:root {
+  --main-color: rgb(230, 95, 120);
+  ---border: 2px solid;
+  --main-transation: all 0.9s;
+}
+.text-color {
+  color: rgb(33, 37, 41);
+}
+.bg-section {
+  background-color: #f1f1f1;
+}
+
+h1 {
+  font-size: 4.0625rem;
+}
+
+header .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/header-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+header .pill {
+  border: 2px solid white;
+  width: 35px;
+  height: 65px;
+  bottom: -150px;
+  padding-top: 34px;
+  animation: move 0.3s infinite;
+}
+header .dot {
+  width: 4px;
+  height: 10px;
+}
+
+main .about .content p span {
+  color: var(--main-color);
+}
+main .about .content .icons span {
+  width: 40px;
+  height: 40px;
+  border: var(---border) rgba(0, 0, 0, 0.2);
+  transition: var(--main-transation);
+}
+main .about .content .icons span:hover {
+  border: var(---border) var(--main-color);
+}
+main .about .content .icons span i {
+  transition: var(--main-transation);
+}
+main .about .content .icons span:hover i {
+  color: var(--main-color);
+}
+main .client img {
+  width: 80px;
+  height: 80px;
+}
+main .client .carousel span i {
+  color: var(--main-color);
+}
+main .client .carousel-indicators button {
+  background-color: var(--main-color);
+  padding: 2px;
+}
+.carousel-indicators {
+  bottom: -38px;
+}
+main .client #carouselExampleCaptions .carousel-inner {
+  width: 50%;
+}
+
+main .blog .content .layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 113%;
+  transition: var(--main-transation);
+}
+
+main .blog .content:hover .layer {
+  top: 0%;
+}
+main .blog .content .image img {
+  transition: all 0.2s;
+}
+main .blog .content:hover img {
+  transform: scale(1.3);
+}
+main #blog .nav-pills .nav-link.active {
+  background-color: var(--main-color);
+}
+main .blog .nav-pills .nav-link {
+  border-radius: 20px;
+}
+main .work .card p span,
+main .contact .content i {
+  color: var(--main-color);
+}
+main .blog .nav-link {
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 3px solid var(--main-color);
+}
+
+main .contact .send button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 0;
+}
+
+@keyframes move {
+  0% {
+    bottom: -120px;
+  }
+  25% {
+    bottom: -100px;
+  }
+  50% {
+    bottom: -90px;
+  }
+  100% {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .client #carouselExampleCaptions .carousel-inner {
+    width: 100%;
+  }
+}
